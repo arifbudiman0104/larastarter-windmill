@@ -2,6 +2,7 @@
     <x-slot name="header">
         {{ __('Users') }}
     </x-slot>
+
     <!-- Cards -->
     <div class="grid gap-2 mb-2 md:grid-cols-2 xl:grid-cols-4">
         <!-- Card -->
@@ -54,11 +55,11 @@
             <span class="ml-2">Create User</span>
         </button>
         <button
-            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-green-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-green-600 border border-transparent rounded-lg active:bg-green-600 hover:bg-green-700 focus:outline-none focus:shadow-outline-green">
             Export Excel
         </button>
         <button
-            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-purple-600 hover:bg-purple-700 focus:outline-none focus:shadow-outline-purple">
+            class="px-4 py-2 text-sm font-medium leading-5 text-white transition-colors duration-150 bg-red-600 border border-transparent rounded-lg active:bg-red-600 hover:bg-red-700 focus:outline-none focus:shadow-outline-red">
             Export PDF
         </button>
 
@@ -215,7 +216,7 @@
 
         </div> --}}
     </div>
-    <div class=" py-5">
+    <div class=" pt-5">
         {{ $users->links() }}
     </div>
 </x-app-layout>
